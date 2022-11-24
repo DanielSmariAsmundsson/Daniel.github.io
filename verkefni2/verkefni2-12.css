@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+/*Verkefni 2-A*/
+body{padding: 20px;}
+h1{border: 1px solid green;}
+div{
+    border: 3px solid red;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.h1tveir{color: red;}
+.h1thrir{
+    color: blue;
+    border: 3px blue dashed;
+    padding: 20px;
+}
+/*Verkefni 2-B*/
+.ul-block>li{
+    /*display: block;*/
+    border: 3px dashed green;
+    padding: 1em;
+    margin: 1em;
+    list-style-type: disc;
+}
+.ul-inline>li{
+    display: inline;
+    border: 3px dashed blue;
+    padding: 1em;
+    margin: 1em;
+    color: red;
+}
+
+.ul-inline-block>li{
+    display: inline-block;
+    border: 3px dashed red;
+    padding: 1em;
+    margin: 1em;
+}
