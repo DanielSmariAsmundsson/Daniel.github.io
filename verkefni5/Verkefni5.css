@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 ;
+    background: linear-gradient(to bottom, rgb(140, 3, 3), rgb(198, 9, 9));
+    }
+.litur-bakgrunnur{
+    background-image: linear-gradient( rgb(255, 0, 0),rgb(237, 77, 77) )
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.haus2{
+    text-align: center;
+    font-size: 2em;
+    color: gold;
+}
+.col-3, p{
+    display: inline;
+}
+@media screen and (min-width:30em) {
+    .col-1, .col-2, .col-3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (min-width:48em){
+    .col-2, .col-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+@media screen and (min-width:80em) {
+    .col-3{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    
+}
