@@ -1,0 +1,155 @@
+
+* {
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 ;
+    background: linear-gradient(to bottom, rgba(233, 8, 8, 0.5), rgba(0, 0, 0, 0.752));
+
+}
+
+.haus{
+    text-align: center;
+    color: rgba(7, 7, 7, 0.815);
+    
+  }
+ 
+  .litur-bakgrunnur{
+    background-image: linear-gradient( yellow,white )
+  }
+  .innermenu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .col-2{
+    padding: 2em;
+    margin-top: 2em;
+    color: rgb(230, 230, 230);
+
+  }
+  .efstsida{
+    display: none;
+  }
+  h1{
+    font-size: 40px;
+    text-align: center;
+    margin:0 auto;
+    display: block;
+}
+  iframe{
+    height: 300px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+    display: block;
+    margin:0 auto;
+}
+section{
+    padding-top: 3em;
+}
+li{
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    padding: 5px;
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .copy{
+    text-align: center;
+  }
+ 
+  @media screen and (min-width:37.5em) {
+    .col-2  {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      color: rgb(230, 230, 230);
+    }
+    
+    iframe{
+        height: 400px;
+        width: 400px;
+        resize: both;
+        overflow: auto;     
+}
+    
+    
+    .efstsida{ 
+      display: inline;
+      position: fixed;
+      bottom: 1em;
+      right: 1em;
+      color: yellow;
+      
+    }
+    }
+    @media screen and (min-width:48em){
+      .fotur{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        list-style-type: none;
+      }
+      .main {
+        border: 1px solid blue;
+      }
+      .footer{
+        border: 1px solid black;
+      }
+    .nafn{
+        margin:0 auto;
+        text-align: center;
+        width:750px;
+        
+    }
+     .innermenu{
+      display: flex;
+      flex-flow: row;
+      padding: 15px;
+      width:750px;
+      margin:0 auto;
+      list-style:none;
+     }
+     .innermenu>li{
+        float: left;
+     }
+     .innermenu>a{
+        display:block;
+        text-align:center;
+        width:150px; 
+        text-decoration:none; 
+     }     
+     hr{
+      display: none;
+     }
+     iframe{
+        height: 750px;
+        width: 750px;
+        resize: both;
+        overflow: auto;
+      
+}
+    
+     }
+     @media screen and (min-width:60em){
+      .col-2, .haus, .col-1, .innermenu, .nafn{
+      margin: 0 auto;
+      max-width: 80%;
+        
+    }
+    
+    }
